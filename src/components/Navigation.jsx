@@ -6,7 +6,7 @@ const Navigation = () => {
         <nav>
             <div>
                 <Link to="/"><img
-                src="https://i.imgur.com/C1jcTRl.png"
+                src="https://imgur.com/10tkBZl.png"
                   alt="Rotten Potatoes Logo" 
   style={{ width: "100px", height: "100px" }} 
 
