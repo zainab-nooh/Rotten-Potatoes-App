@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import Footer from './components/Footer'
+import Navigation from './components/Navigation'
 import './App.css'
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
 
   return (
     <>
+    <Navigation/>
       <h1>Hello world</h1>
       <Footer />
     </>
