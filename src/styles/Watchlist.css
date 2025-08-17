@@ -1,0 +1,101 @@
+/* Page container */
+.watchlist-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+.watchlist-container h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+/* Empty message */
+.watchlist-container p {
+  text-align: center;
+  color: #777;
+  font-size: 18px;
+}
+
+/* Movie card layout */
+.watchlist-container article {
+  display: flex;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.watchlist-container article:hover {
+  transform: translateY(-3px);
+}
+
+/* Poster image */
+.watchlist-container article img {
+  width: 120px;
+  height: auto;
+  object-fit: cover;
+  border-right: 1px solid #ddd;
+}
+
+/* Text area */
+.watchlist-container article div {
+  padding: 16px;
+  flex: 1;
+}
+
+/* Title */
+.watchlist-container article h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+/* Type + year */
+.watchlist-container article p {
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Remove button */
+.watchlist-container article button {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.watchlist-container article button:hover {
+  background-color: #cc0000;
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+  .watchlist-container article {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .watchlist-container article img {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .watchlist-container article div {
+    text-align: center;
+  }
+}
