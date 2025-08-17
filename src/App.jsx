@@ -1,8 +1,14 @@
+
+import Footer from './components/Footer'
+import Navigation from './components/Navigation'
+import NotFound from './pages/NotFound'
+
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
 import ForYou from './pages/ForYou';
 function App() {
   return (
+    
     <Router>
       <div className="App">
         {/* Navigation will be shown on all pages */}
@@ -17,6 +23,7 @@ function App() {
             <Route path="*" element={<div>Page Not Found</div>} />
           </Routes>
         </main>
+        <Footer />                             
       </div>
     </Router>
   );
