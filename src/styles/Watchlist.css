@@ -1,0 +1,78 @@
+/* Container for the entire watchlist page */
+.watchlist-page {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Watchlist heading */
+.watchlist-page h1 {
+  font-size: 32px;
+  color: #222;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Message when watchlist is empty */
+.watchlist-page p {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+}
+
+/* Movie card (article) layout */
+.watchlist-page article {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  gap: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* Movie poster image */
+.watchlist-page article img {
+  width: 120px;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* Text content next to the image */
+.watchlist-page article div {
+  flex: 1;
+}
+
+/* Movie title */
+.watchlist-page article h2 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 20px;
+}
+
+/* Year & type info */
+.watchlist-page article p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Remove button */
+.watchlist-page article button {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.watchlist-page article button:hover {
+  background-color: #cc0000;
+}

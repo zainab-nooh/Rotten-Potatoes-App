@@ -1,0 +1,33 @@
+/* Make sure html and body take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Make your app container a flex column and full height */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Make the main content area grow to fill space */
+main {
+  flex-grow: 1;
+}
+
+/* Your existing footer styles */
+footer {
+  background-color: #222;
+  color: #eee;
+  padding: 40px 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  border-top: 4px solid #ffcc00;
+  margin-top: 40px;
+}
