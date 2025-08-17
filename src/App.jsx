@@ -2,8 +2,8 @@
 import Footer from './components/Footer'
 import Navigation from './components/Navigation'
 import NotFound from './pages/NotFound'
-// import Watchlist from './pages/Watchlist'
-// import MovieView from './pages/MovieView'
+import MovieView from './pages/MovieView';
+
 
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
@@ -24,7 +24,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/foryou" element={<ForYou />} />
             {/* <Route path="/watchlist" element={<Watchlist />} /> */}
-            {/* <Route path="/movie" element={<MovieView />} /> */}
+            <Route path="/movie/:id" element={<MovieView />} />
 
             {/* 404 route */}
             <Route path="/*" element={<NotFound />} />
