@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import '../styles/MovieCard.css'
 
 export default function MovieCard({ movie }) {
   const [imageError, setImageError] = useState(false);

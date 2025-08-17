@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import '../styles/Navigation.css'
 const Navigation = () => {
     return (
         
@@ -7,14 +8,14 @@ const Navigation = () => {
                 <Link to="/"><img
                 src="https://i.imgur.com/C1jcTRl.png"
                   alt="Rotten Potatoes Logo" 
-  style={{ width: "300px", height: "300px" }} 
+  style={{ width: "100px", height: "100px" }} 
 
                 /></Link>
                 <ul>
-                    <li><Link to="/home">Home</Link></li>
-                    <li><Link to="/for-you">For You</Link></li>
-                    <li><Link to="/">Watchlist</Link></li>
-                    <li><Link to="/">About Us (we’re broke..)</Link></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/foryou">For You</Link></li>
+                    <li><Link to="/watchlist">Watchlist</Link></li>
+                    
                 </ul>
             </div>
         </nav>

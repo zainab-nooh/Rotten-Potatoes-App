@@ -1,3 +1,5 @@
+import '../styles/MovieView.css'
+
 const MovieView = ({ movie, watchlist, onToggleWatch }) => {
   
   const inList = watchlist.some(x => x.imdbID === movie.imdbID);

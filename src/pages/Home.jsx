@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { searchMovies } from '../utils/api';
 import SearchBar from '../components/SearchBar';
 import MovieCard from '../components/MovieCard';
+import '../styles/Home.css'
+
 // import LoadingSpinner from '../components/LoadingSpinner';
 
 export default function Home() {
