@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { searchMovies } from '../utils/api';
 import MovieCard from '../components/MovieCard';
+import '../styles/ForYou.css'
 // import LoadingSpinner from '../components/LoadingSpinner';
 
 export default function ForYou() {
