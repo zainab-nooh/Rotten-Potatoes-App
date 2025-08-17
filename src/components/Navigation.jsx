@@ -4,12 +4,17 @@ const Navigation = () => {
         
         <nav>
             <div>
-                <Link to="/">Rotten Potatoes 🍟</Link>
+                <Link to="/"><img
+                src="https://i.imgur.com/C1jcTRl.png"
+                  alt="Rotten Potatoes Logo" 
+  style={{ width: "300px", height: "300px" }} 
+
+                /></Link>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/">For You</Link></li>
+                    <li><Link to="/home">Home</Link></li>
+                    <li><Link to="/for-you">For You</Link></li>
                     <li><Link to="/">Watchlist</Link></li>
-                    <li><link to="/">About Us (we’re broke)</link></li>
+                    <li><Link to="/">About Us (we’re broke)</Link></li>
                 </ul>
             </div>
         </nav>
