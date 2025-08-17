@@ -1,0 +1,60 @@
+/* styles/Navigation.css */
+
+nav {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 16px 20px;
+  border-bottom: 4px solid #ffcc00;
+}
+
+nav div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #eee;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Responsive: stack menu on small screens  .-.*/
+@media (max-width: 600px) {
+  nav div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
