@@ -1,78 +1,101 @@
-/* Container for the entire watchlist page */
-.watchlist-page {
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+/* Page container */
+.watchlist-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Watchlist heading */
-.watchlist-page h1 {
+/* Title */
+.watchlist-container h1 {
+  text-align: center;
   font-size: 32px;
-  color: #222;
-  text-align: center;
   margin-bottom: 30px;
+  color: #222;
 }
 
-/* Message when watchlist is empty */
-.watchlist-page p {
+/* Empty message */
+.watchlist-container p {
   text-align: center;
+  color: #777;
   font-size: 18px;
-  color: #888;
 }
 
-/* Movie card (article) layout */
-.watchlist-page article {
+/* Movie card layout */
+.watchlist-container article {
   display: flex;
   align-items: flex-start;
-  background-color: #fff;
+  background-color: #f9f9f9;
   border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 15px;
   margin-bottom: 20px;
-  gap: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
 }
 
-/* Movie poster image */
-.watchlist-page article img {
+.watchlist-container article:hover {
+  transform: translateY(-3px);
+}
+
+/* Poster image */
+.watchlist-container article img {
   width: 120px;
   height: auto;
-  border-radius: 6px;
   object-fit: cover;
+  border-right: 1px solid #ddd;
 }
 
-/* Text content next to the image */
-.watchlist-page article div {
+/* Text area */
+.watchlist-container article div {
+  padding: 16px;
   flex: 1;
 }
 
-/* Movie title */
-.watchlist-page article h2 {
-  margin: 0 0 10px 0;
-  color: #333;
+/* Title */
+.watchlist-container article h2 {
+  margin: 0 0 10px;
   font-size: 20px;
+  color: #333;
 }
 
-/* Year & type info */
-.watchlist-page article p {
+/* Type + year */
+.watchlist-container article p {
+  margin: 0 0 12px;
   font-size: 14px;
   color: #666;
-  margin-bottom: 10px;
 }
 
 /* Remove button */
-.watchlist-page article button {
+.watchlist-container article button {
   background-color: #ff4d4d;
   color: #fff;
   border: none;
   padding: 8px 16px;
   border-radius: 4px;
-  cursor: pointer;
   font-weight: bold;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.watchlist-page article button:hover {
+.watchlist-container article button:hover {
   background-color: #cc0000;
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+  .watchlist-container article {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .watchlist-container article img {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .watchlist-container article div {
+    text-align: center;
+  }
 }

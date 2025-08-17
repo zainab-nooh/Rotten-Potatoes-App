@@ -1,25 +1,5 @@
-/* Make sure html and body take full height */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-/* Make your app container a flex column and full height */
-#root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* Make the main content area grow to fill space */
-main {
-  flex-grow: 1;
-}
-
-/* Your existing footer styles */
 footer {
-  background-color: #222;
+  background-color: #1e1e1e;
   color: #eee;
   padding: 40px 20px;
   font-size: 14px;
@@ -30,4 +10,52 @@ footer {
   gap: 30px;
   border-top: 4px solid #ffcc00;
   margin-top: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* Each section inside footer */
+footer div {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Headings like 'Disclaimer' */
+footer h2 {
+  font-size: 18px;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+/* Paragraph text */
+footer p {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+/* List links */
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer ul li {
+  margin-bottom: 8px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #ffdd88;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+footer ul li a:hover {
+  color: #ffffff;
+}
+
+/* Bottom text (after the 3 sections) */
+footer::after {
+  content: "© 2025 Rotten Potatoes. All rights reserved. (Well, not really — we stole half of this from the internet anyway.)\A\AIf you’re reading this footer, you’re either really bored or grading our project. Hi, professor 👋.";
+  display: block;
+  font-size: 12px;
+  color: #aaa;

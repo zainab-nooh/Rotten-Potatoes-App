@@ -1,0 +1,82 @@
+/* Container for the movie view */
+.movie-view {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1e1e1e;
+  color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Movie poster */
+.movie-view img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-right: 2px solid #333;
+}
+
+/* Right-side details */
+.movie-view div {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Title */
+.movie-view h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+  color: #ffcc00;
+}
+
+/* Paragraphs (plot, actors, etc.) */
+.movie-view p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Label text (Actors:, Ratings:) */
+.movie-view p strong {
+  color: #fff;
+}
+
+/* Watch/Remove button */
+.movie-view button {
+  margin-top: 20px;
+  align-self: flex-start;
+  background-color: #ffcc00;
+  color: #1e1e1e;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.movie-view button:hover {
+  background-color: #e6b800;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .movie-view {
+    flex-direction: column;
+  }
+
+  .movie-view img {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #333;
+  }
+}
