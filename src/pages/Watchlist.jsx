@@ -1,38 +1,19 @@
-import React, { useState } from "react";
-import { loadWatchlist, toggleWatch } from "../App.jsx";
+import React from 'react';
 
-const Watchlist = () => {
-
-    //add to app.jsx
-    
-// export function loadWatchlist() {
-//   try { return JSON.parse(localStorage.getItem(KEY)) ?? []; }
-//   catch { return []; }
-// }
-
-// export function saveWatchlist(list) {
-//   localStorage.setItem(KEY, JSON.stringify(list));
-// }
-// const [watch, setWatch] = useState(loadWatchlist());
-
-  const handleToggleWatch = (item) => {
-    const updated = toggleWatch(watch, item);
-    setWatch(updated);
-  };
-
+const Watchlist = ({ watchlist, onToggleWatch }) => {
   return (
     <div>
       <h1>Watchlist</h1>
-      {watch.length === 0 ? (
+      {watchlist.length === 0 ? (
         <p>Your watchlist is empty.</p>
       ) : (
-        watch.map(w => (
-          <article key={w.id || w.Title}>
-            <img src={w.Poster} alt={w.Title} />
+        watchlist.map((movie) => (
+          <article key={movie.imdbID}>
+            <img src={movie.Poster} alt={movie.Title} />
             <div>
-              <h2>{w.Title}</h2>
-              <p>{w.Type} • {w.Year}</p>
-              <button onClick={() => handleToggleWatch(w)}>Remove</button>
+              <h2>{movie.Title}</h2>
+              <p>{movie.Type} • {movie.Year}</p>
+              <button onClick={() => onToggleWatch(movie)}>Remove</button>
             </div>
           </article>
         ))

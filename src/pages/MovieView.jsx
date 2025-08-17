@@ -40,6 +40,7 @@ const MovieView = ({ watchlist = [], onToggleWatch }) => {
         <p><strong>Director:</strong> {movie.Director}</p>
         <p><strong>Runtime:</strong> {movie.Runtime}</p>
         <p><strong>Ratings:</strong> {movie.Ratings?.map(r => `${r.Source}: ${r.Value}`).join(" · ")}</p>
+        
          <button onClick={() => onToggleWatch(movie)}>
          {inList ? 'Remove from Watchlist' : 'Add to Watchlist'}
         </button>
