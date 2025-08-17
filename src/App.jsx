@@ -1,5 +1,6 @@
 import Footer from './components/Footer'
 import Navigation from './components/Navigation'
+import NotFound from './pages/NotFound'
 import './App.css'
 
 function App() {
