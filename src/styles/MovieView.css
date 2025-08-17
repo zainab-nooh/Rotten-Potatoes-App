@@ -1,0 +1,33 @@
+/* .movie-detail {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.movie-detail img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  background-color: #d0c4f7;
+}
+
+.movie-detail .info {
+  max-width: 600px;
+}
+
+.movie-detail .info h2 {
+  margin-bottom: 10px;
+}
+
+.movie-detail .info p {
+  margin: 5px 0;
+}
+
+.add-watchlist {
+  margin-top: 15px;
+  padding: 8px 12px;
+  background-color: #000;
+  color: white;
+  border: none;
+  cursor: pointer;
+} */
