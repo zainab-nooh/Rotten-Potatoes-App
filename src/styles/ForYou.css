@@ -1,0 +1,144 @@
+/* For You Page Container */
+.for-you-page {
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+/* Inner Content Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Page Title */
+.page-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+/* Movie Section */
+.movie-section {
+  margin-bottom: 50px;
+}
+
+/* Section Header with Title and Refresh */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.section-title {
+  font-size: 24px;
+  color: #222;
+  font-weight: 600;
+}
+
+/* Section Description (for recommendations) */
+.section-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Refresh Button */
+.refresh-btn {
+  background-color: #ffcc00;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.refresh-btn:disabled {
+  background-color: #ffe680;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.refresh-btn:hover:not(:disabled) {
+  background-color: #e6b800;
+}
+
+/* Horizontal Movie Cards Scroll */
+.movies-horizontal {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+.movies-horizontal::-webkit-scrollbar {
+  height: 6px;
+}
+
+.movies-horizontal::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+/* Loading Container */
+.loading-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.simple-loading {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Error Handling */
+.error-message {
+  text-align: center;
+  color: #c00;
+  margin: 30px 0;
+}
+
+.error-message button {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.error-message button:hover {
+  background-color: #cc0000;
+}
+
+/* No Recommendations Fallback */
+.no-recommendations {
+  text-align: center;
+  color: #666;
+  margin-top: 20px;
+}
+
+.no-recommendations button {
+  margin-top: 10px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.no-recommendations button:hover {
+  background-color: #218838;
+}
