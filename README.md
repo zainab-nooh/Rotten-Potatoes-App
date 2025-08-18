@@ -140,17 +140,13 @@ npm run dev
 ---
 ## Contributors
 **Team - Group 4**
-PM/GitHub Manager: Zainab Nooh
-Layout Lead: Mohammed Adel
-UI Lead: Hawra Ebrahim
-Page Dev A: Ayah Aljabboori
-Page Dev B: Ahmed Alshaikh
-QA/API/Docs: Zainab Nooh
+- **PM/GitHub Manager:** Zainab Nooh
+- **Layout Lead:** Mohammed Adel
+- **UI Lead:** Hawra Ebrahim
+- **Page Dev A:** Ayah Aljabboori
+- **Page Dev B:** Ahmed Alshaikh
+- **QA/API/Docs:** Zainab Nooh
 
-- **Home (/)** - Search and browse movies
-- **For You (/foryou)** - Curated recommendations
-- **Watchlist (/watchlist)** - Personal saved movies
-- **Movie Details (/movie/:id)** - Detailed movie info
 
 ---
 
