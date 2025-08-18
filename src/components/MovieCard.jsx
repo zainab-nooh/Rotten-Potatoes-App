@@ -40,7 +40,7 @@ export default function MovieCard({ movie, movieDBObj, onToggleWatch }) {
           )}
         </div>
       </div>
-      <button onClick={() => onToggleWatch(movieDBObj)}>Remove</button>
+      {onToggleWatch ? <button onClick={() => onToggleWatch(movieDBObj)}>Remove</button> : <></>}
     </div>
   );
 }

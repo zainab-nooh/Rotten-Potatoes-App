@@ -22,8 +22,9 @@ const Watchlist = ({ watchlist, onToggleWatch }) => {
                 }}
                 movieDBObj={movie}
                 onToggleWatch={onToggleWatch}
+                
               />
-              {/* <button onClick={() => onToggleWatch(movie)}>Remove</button> */}
+                {/* <button onClick={() => onToggleWatch(movie)}>Remove</button> */}
             </div>
           ))}
         </div>
