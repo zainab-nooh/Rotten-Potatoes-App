@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/MovieCard.css'
 
-export default function MovieCard({ movie, onToggleWatch }) {
+export default function MovieCard({ movie, movieDBObj, onToggleWatch }) {
   const [imageError, setImageError] = useState(false);
   const navigate = useNavigate();
 
@@ -15,8 +15,8 @@ export default function MovieCard({ movie, onToggleWatch }) {
   };
 
   return (
-    <div className="movie-card" onClick={handleClick}>
-      <div className="movie-poster">
+    <div className="movie-card">
+      <div className="movie-poster" onClick={handleClick}>
         {movie.poster && !imageError ? (
           <img 
             src={movie.poster} 
@@ -25,13 +25,13 @@ export default function MovieCard({ movie, onToggleWatch }) {
             loading="lazy"
           />
         ) : (
-          <div className="poster-placeholder">
+          <div className="poster-placeholder" onClick={handleClick}>
             <span className="placeholder-text">No Image</span>
           </div>
         )}
       </div>
       
-      <div className="movie-info">
+      <div className="movie-info" onClick={handleClick}>
         <h3 className="movie-title">{movie.title}</h3>
         <div className="movie-details">
           <span className="movie-year">{movie.year}</span>
@@ -40,7 +40,7 @@ export default function MovieCard({ movie, onToggleWatch }) {
           )}
         </div>
       </div>
-      <button onClick={() => onToggleWatch(movie)}>Remove</button>
+      <button onClick={() => onToggleWatch(movieDBObj)}>Remove</button>
     </div>
   );
 }

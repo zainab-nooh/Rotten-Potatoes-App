@@ -20,6 +20,7 @@ const Watchlist = ({ watchlist, onToggleWatch }) => {
                   poster: movie.Poster !== 'N/A' ? movie.Poster : null,
                   type: movie.Type,
                 }}
+                movieDBObj={movie}
                 onToggleWatch={onToggleWatch}
               />
               {/* <button onClick={() => onToggleWatch(movie)}>Remove</button> */}
