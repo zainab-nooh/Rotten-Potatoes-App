@@ -1,4 +1,4 @@
-/* styles/Navigation.css */
+
 
 nav {
   background-color: #1e1e1e;
@@ -45,7 +45,7 @@ nav ul li a:hover {
   color: #ffcc00;
 }
 
-/* Responsive: stack menu on small screens  .-.*/
+
 @media (max-width: 600px) {
   nav div {
     flex-direction: column;

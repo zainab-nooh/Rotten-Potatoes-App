@@ -1,4 +1,4 @@
-/* Main container for the home page */
+
 .home-page {
   padding: 40px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -6,13 +6,13 @@
   min-height: 100vh;
 }
 
-/* Inner content container */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Page title */
+
 .page-title {
   text-align: center;
   font-size: 32px;
@@ -20,7 +20,7 @@
   color: #222;
 }
 
-/* Search bar styles */
+
 .search-bar {
   margin-bottom: 30px;
   display: flex;
@@ -50,7 +50,7 @@
   border-color: #ffcc00;
 }
 
-/* Search and clear buttons */
+
 .search-btn,
 .clear-btn {
   position: absolute;
@@ -77,7 +77,7 @@
   cursor: not-allowed;
 }
 
-/* Results info */
+
 .results-info {
   text-align: center;
   font-size: 16px;
@@ -85,14 +85,14 @@
   color: #333;
 }
 
-/* Movie grid */
+
 .movies-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 25px;
 }
 
-/* Loading */
+
 .loading-container {
   text-align: center;
   margin: 40px 0;
@@ -103,7 +103,7 @@
   color: #555;
 }
 
-/* Error */
+
 .error-message {
   text-align: center;
   color: #c00;
@@ -125,7 +125,7 @@
   background-color: #cc0000;
 }
 
-/* No results */
+
 .no-results {
   text-align: center;
   color: #666;
@@ -137,7 +137,7 @@
   margin-bottom: 10px;
 }
 
-/* Pagination */
+
 .pagination {
   display: flex;
   justify-content: center;

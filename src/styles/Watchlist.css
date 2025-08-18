@@ -1,101 +1,93 @@
-/* Page container */
+
 .watchlist-container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 40px auto;
   padding: 0 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Title  */
+
 .watchlist-container h1 {
   text-align: center;
-  font-size: 32px;
+  font-size: 34px;
   margin-bottom: 30px;
-  color: #222;
+  color: #1a1a1a;
+  letter-spacing: 1px;
 }
 
-/* Empty message */
+
 .watchlist-container p {
   text-align: center;
   color: #777;
   font-size: 18px;
+  margin-top: 20px;
 }
 
-/* Movie card layout */
-.watchlist-container article {
+
+.watchlist-grid {
   display: flex;
-  align-items: flex-start;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  margin-bottom: 20px;
-  border-radius: 8px;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+
+.watchlist-card {
+  width: 190px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease;
+  text-align: center;
+  padding: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.watchlist-container article:hover {
-  transform: translateY(-3px);
+.watchlist-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
-/* Poster image */
-.watchlist-container article img {
-  width: 120px;
-  height: auto;
+
+.watchlist-card img {
+  width: 100%;
+  height: 280px;
   object-fit: cover;
-  border-right: 1px solid #ddd;
+  border-radius: 6px;
 }
 
-/* Text area */
-.watchlist-container article div {
-  padding: 16px;
-  flex: 1;
+
+.watchlist-card h2 {
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  line-height: 1.4;
 }
 
-/* Title */
-.watchlist-container article h2 {
-  margin: 0 0 10px;
-  font-size: 20px;
-  color: #333;
-}
 
-/* Type + year */
-.watchlist-container article p {
-  margin: 0 0 12px;
+.watchlist-card p {
   font-size: 14px;
   color: #666;
+  margin: 4px 0;
 }
 
-/* Remove button */
-.watchlist-container article button {
+
+   
+.watchlist-card button {
   background-color: #ff4d4d;
   color: #fff;
   border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-weight: bold;
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
 }
 
-.watchlist-container article button:hover {
+.watchlist-card button:hover {
   background-color: #cc0000;
-}
-
-/* Responsive for small screens */
-@media (max-width: 600px) {
-  .watchlist-container article {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .watchlist-container article img {
-    width: 100%;
-    border-right: none;
-    border-bottom: 1px solid #ddd;
-  }
-
-  .watchlist-container article div {
-    text-align: center;
-  }
+  transform: scale(1.05);
 }

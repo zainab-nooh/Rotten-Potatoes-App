@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/MovieCard.css'
 
-export default function MovieCard({ movie }) {
+export default function MovieCard({ movie, onToggleWatch }) {
   const [imageError, setImageError] = useState(false);
   const navigate = useNavigate();
 
@@ -40,6 +40,7 @@ export default function MovieCard({ movie }) {
           )}
         </div>
       </div>
+      <button onClick={() => onToggleWatch(movie)}>Remove</button>
     </div>
   );
 }

@@ -1,22 +1,31 @@
 import React from 'react';
+import MovieCard from '../components/MovieCard'; // ✅ use the same card component
+import '../styles/Watchlist.css';
 
 const Watchlist = ({ watchlist, onToggleWatch }) => {
   return (
-    <div>
+    <div className="watchlist-container">
       <h1>Watchlist</h1>
       {watchlist.length === 0 ? (
         <p>Your watchlist is empty.</p>
       ) : (
-        watchlist.map((movie) => (
-          <article key={movie.imdbID}>
-            <img src={movie.Poster} alt={movie.Title} />
-            <div>
-              <h2>{movie.Title}</h2>
-              <p>{movie.Type} • {movie.Year}</p>
-              <button onClick={() => onToggleWatch(movie)}>Remove</button>
+        <div className="watchlist-grid">
+          {watchlist.map((movie) => (
+            <div key={movie.imdbID} className="watchlist-card-wrapper">
+              <MovieCard
+                movie={{
+                  id: movie.imdbID,
+                  title: movie.Title,
+                  year: movie.Year,
+                  poster: movie.Poster !== 'N/A' ? movie.Poster : null,
+                  type: movie.Type,
+                }}
+                onToggleWatch={onToggleWatch}
+              />
+              {/* <button onClick={() => onToggleWatch(movie)}>Remove</button> */}
             </div>
-          </article>
-        ))
+          ))}
+        </div>
       )}
     </div>
   );

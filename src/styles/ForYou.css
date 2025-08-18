@@ -1,4 +1,4 @@
-/* For You Page Container */
+
 .for-you-page {
   padding: 40px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -6,13 +6,13 @@
   min-height: 100vh;
 }
 
-/* Inner Content Container */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Page Title */
+
 .page-title {
   text-align: center;
   font-size: 32px;
@@ -20,12 +20,12 @@
   color: #222;
 }
 
-/* Movie Section */
+
 .movie-section {
   margin-bottom: 50px;
 }
 
-/* Section Header with Title and Refresh */
+
 .section-header {
   display: flex;
   justify-content: space-between;
@@ -39,14 +39,14 @@
   font-weight: 600;
 }
 
-/* Section Description (for recommendations) */
+
 .section-description {
   font-size: 16px;
   color: #666;
   margin-bottom: 20px;
 }
 
-/* Refresh Button */
+
 .refresh-btn {
   background-color: #ffcc00;
   color: #333;
@@ -69,7 +69,7 @@
   background-color: #e6b800;
 }
 
-/* Horizontal Movie Cards Scroll */
+
 .movies-horizontal {
   display: flex;
   gap: 20px;
@@ -88,7 +88,7 @@
   border-radius: 4px;
 }
 
-/* Loading Container */
+
 .loading-container {
   text-align: center;
   margin: 40px 0;
@@ -99,7 +99,7 @@
   color: #555;
 }
 
-/* Error Handling */
+
 .error-message {
   text-align: center;
   color: #c00;
@@ -121,7 +121,7 @@
   background-color: #cc0000;
 }
 
-/* No Recommendations Fallback */
+
 .no-recommendations {
   text-align: center;
   color: #666;
