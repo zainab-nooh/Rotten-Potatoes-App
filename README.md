@@ -12,7 +12,7 @@ Rotten-Potatoes is a 4-page React SPA built for a team hackathon. Users can sear
 
 ## Demo
 
- Visit the [live demo](https://rotten-potatoes-app.onrender.com) to see Connect 4 in action
+ Visit the [live demo](https://rotten-potatoes-app.onrender.com) to see Rotten-Potatoes in action
 
 <br>
 
