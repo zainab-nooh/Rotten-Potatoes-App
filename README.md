@@ -10,6 +10,12 @@
 
 Rotten-Potatoes is a 4-page React SPA built for a team hackathon. Users can search movies, manage a personal watchlist, and discover curated favorites using the OMDb API.
 
+## Demo
+
+ Visit the [live demo](https://rotten-potatoes-app.onrender.com) to see Connect 4 in action
+
+<br>
+
 ## Features
 
 - 🔍 **Movie Search** - Real-time movie discovery
